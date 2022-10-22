@@ -9,6 +9,7 @@ const update = function (note, oldNote){
             n.body = note.body
         }
         return n
+        
     })
     fs.writeFileSync('note.txt', JSON.stringify(newNote))
 }
